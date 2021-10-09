@@ -1,0 +1,227 @@
+/* Задает переменные для цвета */
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+  --button-background-color: #f5f4fa;
+
+  --base-font-size: 14px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  background-color: var(--primary-white-color);
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.logo-header {
+  text-decoration: none;
+  color: var(--title-text-color);
+}
+
+.logo-web {
+  color: var(--accent-color);
+}
+
+.list {
+  list-style-type: none;
+}
+
+.link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: var(--base-font-size);
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+}
+
+.link.current {
+  color: var(--accent-color);
+}
+
+.contact-link {
+  color: var(--primary-text-color);
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+/* Герой */
+.section-hero {
+  background-color: #2f303a;
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+}
+
+.button {
+  width: 200px;
+  height: 50px;
+  left: 700px;
+  top: 430px;
+
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-style: none;
+
+  cursor: pointer;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--primary-white-color);
+}
+
+.button:hover,
+.button:focus {
+  background-color: #188ce8;
+}
+
+/* .features,
+.works {
+  background-color: #e5e5e5;
+} */
+
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  color: var(--title-text-color);
+}
+
+/* Преимущества */
+.features-title {
+  font-weight: 700;
+  font-size: var(--base-font-size);
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+
+.features-descr {
+  font-size: var(--base-font-size);
+  line-height: 1.71;
+}
+
+/* Команда */
+.teems {
+  background-color: #f5f4fa;
+}
+
+.teems-list-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  color: var(--title-text-color);
+}
+
+.teems-list-desc {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  color: var(--primary-text-color);
+}
+
+/* Футер */
+.footer {
+  background-color: #2f303a;
+}
+
+.footer-logo {
+  text-decoration: none;
+  color: var(--primary-white-color);
+}
+
+.adress-link {
+  text-decoration: none;
+  font-style: normal;
+  font-size: var(--base-font-size);
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-white-color);
+}
+
+.footer-contact-link {
+  text-decoration: none;
+  font-size: var(--base-font-size);
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.works-filter-button {
+  background: var(--button-background-color);
+  border-radius: 4px;
+  border-style: none;
+
+  cursor: pointer;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+.works-filter-button:hover,
+.works-filter-button:focus {
+  background-color: var(--accent-color);
+
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+
+  color: var(--primary-white-color);
+}
+
+.works-list-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+
+.works-list-desk {
+  font-size: 16px;
+  line-height: 1.88;
+}
