@@ -70,6 +70,8 @@ body {
 
 .header {
   display: flex;
+
+  border-bottom: 1px solid #ececec;
 }
 
 /* Навигация */
@@ -405,10 +407,6 @@ body {
 }
 
 /* Портфолио */
-
-.header.portfolio {
-  border-bottom: 1px solid #ececec;
-}
 
 .container.portfolio {
   margin-top: 94px;
