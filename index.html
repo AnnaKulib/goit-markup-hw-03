@@ -55,11 +55,8 @@
     <!-- Мэйн -->
     <main class="main">
       <!-- Герой -->
-      <section class="section-hero">
-        <h1 class="hero-title">
-          Эффективные решения <br />
-          для вашего бизнеса
-        </h1>
+      <section class="section-hero container">
+        <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
         <button class="button" type="button">Заказать услугу</button>
       </section>
       <!-- Преимущества -->
@@ -67,28 +64,56 @@
         <div class="container">
           <h2 class="section-title visually-hidden">Наши преимущества</h2>
           <ul class="features-list list">
-            <li class="item">
+            <li class="features-item">
+              <img
+                class="icon-features"
+                src="./images/attention.png"
+                alt="спутниковая тарелка"
+                width="270"
+                height="120"
+              />
               <h3 class="features-title">Внимание к деталям</h3>
               <p class="features-descr">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li class="item">
+            <li class="features-item">
+              <img
+                class="icon-features"
+                src="./images/punctuality.png"
+                alt="часы"
+                width="270"
+                height="120"
+              />
               <h3 class="features-title">Пунктуальность</h3>
               <p class="features-descr">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li class="item">
+            <li class="features-item">
+              <img
+                class="icon-features"
+                src="./images/planning.png"
+                alt="монитор с графиком"
+                width="270"
+                height="120"
+              />
               <h3 class="features-title">Планирование</h3>
               <p class="features-descr">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li class="item">
+            <li class="features-item">
+              <img
+                class="icon-features"
+                src="./images/technology.png"
+                alt="космонавт"
+                width="270"
+                height="120"
+              />
               <h3 class="features-title">Современные технологии</h3>
               <p class="features-descr">
                 Значимость этих проблем настолько очевидна, что реализация
@@ -101,9 +126,9 @@
       <!-- Виды работ -->
       <section class="section works">
         <div class="container">
-          <h2 class="section-title">Чем мы занимаемся</h2>
+          <h2 class="section-title works-section-title">Чем мы занимаемся</h2>
           <ul class="works-list list">
-            <li class="item">
+            <li class="works-list-item">
               <a href=""
                 ><img
                   src="./images/software.jpg"
@@ -112,7 +137,7 @@
                   height="294"
               /></a>
             </li>
-            <li class="item">
+            <li class="works-list-item">
               <a href=""
                 ><img
                   src="./images/adaptation.jpg"
@@ -121,7 +146,7 @@
                   height="294"
               /></a>
             </li>
-            <li class="item">
+            <li class="works-list-item">
               <a href=""
                 ><img
                   src="./images/design.jpg"
@@ -136,103 +161,156 @@
       <!-- Команда -->
       <section class="section teems">
         <div class="container">
-          <h2 class="section-title">Наша команда</h2>
+          <h2 class="section-title teems-section-title">Наша команда</h2>
           <ul class="teems-list list">
-            <li class="item">
+            <li class="teems-list-item">
               <img
+                class="teems-list-icon"
                 src="./images/demyanenko.jpg"
                 alt="Игорь Демьяненко"
                 width="270"
                 height="260"
               />
-              <h3 class="teems-list-title">Игорь Демьяненко</h3>
-              <p class="teems-list-desc" lang="en">Product Designer</p>
+              <div class="masters-item-description">
+                <h3 class="teems-list-title">Игорь Демьяненко</h3>
+                <p class="teems-list-desc" lang="en">Product Designer</p>
+              </div>
             </li>
-            <li class="item">
+            <li class="teems-list-item">
               <img
+                class="teems-list-icon"
                 src="./images/repina.jpg"
                 alt="Ольга Репина"
                 width="270"
                 height="260"
               />
-              <h3 class="teems-list-title">Ольга Репина</h3>
-              <p class="teems-list-desc" lang="en">Frontend Developer</p>
+              <div class="masters-item-description">
+                <h3 class="teems-list-title">Ольга Репина</h3>
+                <p class="teems-list-desc" lang="en">Frontend Developer</p>
+              </div>
             </li>
-            <li class="item">
+            <li class="teems-list-item">
               <img
+                class="teems-list-icon"
                 src="./images/tarasov.jpg"
                 alt="Николай Тарасов"
                 width="270"
                 height="260"
               />
-              <h3 class="teems-list-title">Николай Тарасов</h3>
-              <p class="teems-list-desc" lang="en">Marketing</p>
+              <div class="masters-item-description">
+                <h3 class="teems-list-title">Николай Тарасов</h3>
+                <p class="teems-list-desc" lang="en">Marketing</p>
+              </div>
             </li>
-            <li class="item">
+            <li class="teems-list-item">
               <img
+                class="teems-list-icon"
                 src="./images/yermakov.jpg"
                 alt="Михаил Ермаков"
                 width="270"
                 height="260"
               />
-              <h3 class="teems-list-title">Михаил Ермаков</h3>
-              <p class="teems-list-desc" lang="en">UI Designer</p>
+              <div class="masters-item-description">
+                <h3 class="teems-list-title">Михаил Ермаков</h3>
+                <p class="teems-list-desc" lang="en">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
       </section>
+      <!-- Клиенты -->
       <section class="section clients">
         <div class="container">
           <h2 class="section-title">Постоянные клиенты</h2>
           <ul class="clientss-list list">
-            <li class="item">
-              <a class="link" href=""><img src="" alt="Название компании" /></a>
+            <li class="clientss-list-item">
+              <a class="link" href=""
+                ><img
+                  src="./images/Client1.png"
+                  alt="Название компании"
+                  width="170"
+                  height="92"
+              /></a>
             </li>
-            <li class="item">
-              <a class="link" href=""><img src="" alt="Название компании" /></a>
+            <li class="clientss-list-item">
+              <a class="link" href=""
+                ><img
+                  src="./images/Client2.png"
+                  alt="Название компании"
+                  width="170"
+                  height="92"
+              /></a>
             </li>
-            <li class="item">
-              <a class="link" href=""><img src="" alt="Название компании" /></a>
+            <li class="clientss-list-item">
+              <a class="link" href=""
+                ><img
+                  src="./images/Client3.png"
+                  alt="Название компании"
+                  width="170"
+                  height="92"
+              /></a>
             </li>
-            <li class="item">
-              <a class="link" href=""><img src="" alt="Название компании" /></a>
+            <li class="clientss-list-item">
+              <a class="link" href=""
+                ><img
+                  src="./images/Client4.png"
+                  alt="Название компании"
+                  width="170"
+                  height="92"
+              /></a>
             </li>
-            <li class="item">
-              <a class="link" href=""><img src="" alt="Название компании" /></a>
+            <li class="clientss-list-item">
+              <a class="link" href=""
+                ><img
+                  src="./images/Client5.png"
+                  alt="Название компании"
+                  width="170"
+                  height="92"
+              /></a>
             </li>
-            <li class="item">
-              <a class="link" href=""><img src="" alt="Название компании" /></a>
+            <li class="clientss-list-item">
+              <a class="link" href=""
+                ><img
+                  src="./images/Client6.png"
+                  alt="Название компании"
+                  width="170"
+                  height="92"
+              /></a>
             </li>
           </ul>
         </div>
       </section>
     </main>
     <!-- Футер -->
-    <footer class="footer">
-      <a class="footer-logo logo" href="/">
-        <span class="logo-web">Web</span>Studio</a
-      >
-      <address>
-        <a
-          class="adress-link"
-          href="https://goo.gl/maps/LREKgnmBMirVQB2t9"
-          target="_blank"
-          rel="noopener noreferrer"
-          >г. Киев, пр-т Леси Украинки, 26</a
+    <footer class="footer section">
+      <div class="container">
+        <a class="footer-logo logo" href="/">
+          <span class="logo-web">Web</span>Studio</a
         >
-      </address>
-      <ul class="list">
-        <li>
-          <a class="footer-contact-link" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <a class="footer-contact-link" href="tel:+380961111111"
-            >+38 096 111 11 11</a
-          >
-        </li>
-      </ul>
+        <div class="footer-contacts">
+          <address>
+            <a
+              class="adress-link"
+              href="https://goo.gl/maps/LREKgnmBMirVQB2t9"
+              target="_blank"
+              rel="noopener noreferrer"
+              >г. Киев, пр-т Леси Украинки, 26</a
+            >
+          </address>
+          <ul class="list">
+            <li>
+              <a class="footer-contact-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="footer-contact-link" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

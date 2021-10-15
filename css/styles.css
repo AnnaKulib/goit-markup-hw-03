@@ -9,6 +9,30 @@
   --base-font-size: 14px;
 }
 
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+li {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
@@ -31,19 +55,62 @@ body {
   margin: -1px;
 }
 
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-ul,
-li {
-  margin: 0;
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+
+  outline: 2px solid tomato;
 }
 
-ul {
-  padding: 0;
+.list {
+  list-style-type: none;
+}
+
+/* Шапка сайта */
+
+.header {
+  display: flex;
+}
+
+/* Навигация */
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav .logo-header {
+  margin-right: 93px;
+  align-self: center;
+}
+
+.nav-links {
+  display: flex;
+  margin-right: auto;
+}
+
+.nav-links .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav-links .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.contact-links {
+  display: flex;
+  margin-left: auto;
+}
+
+.contact-links .item {
+  align-self: center;
+}
+
+.contact-links .item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .logo {
@@ -60,10 +127,6 @@ ul {
 
 .logo-web {
   color: var(--accent-color);
-}
-
-.list {
-  list-style-type: none;
 }
 
 .link {
@@ -89,81 +152,49 @@ ul {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-/* Навигация */
-.nav {
-  display: flex;
-}
-
-.nav .logo-header {
-  margin-right: 93px;
-  align-self: center;
-}
-
-.nav-links {
-  display: flex;
-  padding-left: 0;
-  margin-right: 305px;
-}
-
-.nav-links .item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.nav-links .link {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
-.contact-links {
-  display: flex;
-}
-
-.contact-links .item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.container {
-  width: 1200px;
-  outline: 2px solid tomato;
-}
-.header {
-  display: flex;
-  /* padding-left: 215px;
-  padding-right: 215px; */
-}
-
-.header .contact-links {
-  align-self: center;
-}
-
 /* Герой */
 .section-hero {
+  width: 1600px;
+  height: 600px;
+  margin-bottom: 94px;
+
+  text-align: center;
+
   background-color: #2f303a;
 }
 
 .hero-title {
+  width: 696px;
+  min-height: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  padding-top: 200px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
+
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-white-color);
 }
 
+.section-hero .button {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .button {
-  width: 200px;
+  display: block;
+
+  min-width: 200px;
   height: 50px;
-  left: 700px;
-  top: 430px;
 
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border-style: none;
-
-  cursor: pointer;
 
   font-family: inherit;
   font-weight: 700;
@@ -195,10 +226,39 @@ ul {
 /* Преимущества */
 
 .features {
+  margin-bottom: 94px;
+}
+
+/* .features-list {
   display: flex;
 }
 
+.features-list .item {
+  display: block;
+  width: 270px;
+  height: auto;
+}
+
+.features-list .item:not(:last-child) {
+  margin-right: 30px;
+} */
+
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+}
+
+.features-item {
+  /* flex-basis: calc((100% - 4 * 30px) / 4); */
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
+}
+
 .features-title {
+  padding-top: 30px;
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: var(--base-font-size);
   line-height: 1.14;
@@ -211,9 +271,63 @@ ul {
   line-height: 1.71;
 }
 
+/* Виды работ */
+.works {
+  margin-bottom: 94px;
+}
+
+.works-section-title {
+  min-width: 346px;
+  height: 42px;
+  margin-bottom: 50px;
+}
+
+.works-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+}
+
+.works-list-item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+}
+
 /* Команда */
+
 .teems {
+  width: 1600px;
+  height: 708px;
+
+  /* Почему-то эта секция без марджинов не центрируется
+  в отличие от секции героя и футера */
+  margin-right: auto;
+  margin-left: auto;
+
+  margin-bottom: 94px;
+
   background-color: #f5f4fa;
+}
+
+.teems-section-title {
+  padding-top: 94px;
+  margin-bottom: 50px;
+}
+
+.teems-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+}
+
+.teems-list-item {
+  flex-basis: calc(100% / 4 -30px);
+  margin-left: 30px;
+}
+
+.masters-item-description {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .teems-list-title {
@@ -231,14 +345,45 @@ ul {
   color: var(--primary-text-color);
 }
 
+/* Клиенты */
+
+.clients {
+  margin-bottom: 94px;
+}
+
+.clientss-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+}
+
+.clientss-list-item {
+  flex-basis: calc(100% / 6 -30px);
+  margin-left: 30px;
+}
+
 /* Футер */
 .footer {
+  width: 1600px;
+  height: 252px;
+  margin-left: auto;
+  margin-right: auto;
+
   background-color: #2f303a;
 }
 
 .footer-logo {
+  display: block;
+  width: 145px;
+  padding-top: 60px;
+  margin-bottom: 20px;
+
   text-decoration: none;
   color: var(--primary-white-color);
+}
+
+.footer-contacts {
+  width: 231px;
 }
 
 .adress-link {
@@ -251,6 +396,9 @@ ul {
 }
 
 .footer-contact-link {
+  display: block;
+  padding-top: 9px;
+
   text-decoration: none;
   font-size: var(--base-font-size);
   line-height: 1.71;
