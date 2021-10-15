@@ -156,7 +156,6 @@ body {
 .section-hero {
   width: 1600px;
   height: 600px;
-  margin-bottom: 94px;
 
   text-align: center;
 
@@ -226,7 +225,7 @@ body {
 /* Преимущества */
 
 .features {
-  margin-bottom: 94px;
+  padding-top: 94px;
 }
 
 /* .features-list {
@@ -273,7 +272,8 @@ body {
 
 /* Виды работ */
 .works {
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .works-section-title {
@@ -304,7 +304,8 @@ body {
   margin-right: auto;
   margin-left: auto;
 
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 
   background-color: #f5f4fa;
 }
@@ -348,7 +349,8 @@ body {
 /* Клиенты */
 
 .clients {
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .clientss-list {
@@ -409,8 +411,8 @@ body {
 /* Портфолио */
 
 .container.portfolio {
-  margin-top: 94px;
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .portfolio-filter-list {
