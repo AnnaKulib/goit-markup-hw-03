@@ -67,11 +67,12 @@ body {
 }
 
 /* Шапка сайта */
+.header {
+  border-bottom: 1px solid #ececec;
+}
 
 .header-container {
   display: flex;
-
-  border-bottom: 1px solid #ececec;
 }
 
 /* Навигация */
@@ -261,7 +262,6 @@ body {
 
 .works-section-title {
   min-width: 346px;
-  height: 42px;
   margin-bottom: 50px;
 }
 
@@ -311,6 +311,7 @@ body {
 }
 
 .teems-list-title {
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -382,7 +383,7 @@ body {
 
 .footer-contact-link {
   display: block;
-  padding-top: 9px;
+  margin-top: 9px;
 
   text-decoration: none;
   font-size: var(--base-font-size);
@@ -392,7 +393,7 @@ body {
 
 /* Портфолио */
 
-.container.portfolio {
+.section-portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
 }
